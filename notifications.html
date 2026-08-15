@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notifications - FitZone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= DESKTOP SIDEBAR ================= -->
+
+    <aside class="desktop-sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+                F
+            </div>
+
+            <div>
+                <h2>FitZone</h2>
+                <p>Gym Management</p>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html" class="sidebar-item active">
+
+                <span class="sidebar-icon">🏠</span>
+
+                <span>
+                    Home
+                </span>
+
+            </a>
+
+
+            <a href="members.html" class="sidebar-item">
+
+                <span class="sidebar-icon">👥</span>
+
+                <span>
+                    Members
+                </span>
+
+            </a>
+
+
+            <a href="payments.html" class="sidebar-item">
+
+                <span class="sidebar-icon">₹</span>
+
+                <span>
+                    Payments
+                </span>
+
+            </a>
+
+
+            <a href="attendance.html" class="sidebar-item">
+
+                <span class="sidebar-icon">✓</span>
+
+                <span>
+                    Attendance
+                </span>
+
+            </a>
+
+
+            <a href="membership-plans.html" class="sidebar-item">
+
+                <span class="sidebar-icon">📑</span>
+
+                <span>
+                    Membership Plans
+                </span>
+
+            </a>
+
+
+            <a href="notifications.html" class="sidebar-item">
+
+                <span class="sidebar-icon">🔔</span>
+
+                <span>
+                    Notifications
+                </span>
+
+            </a>
+
+
+            <a href="more.html" class="sidebar-item">
+
+                <span class="sidebar-icon">⋯</span>
+
+                <span>
+                    More
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="gym-profile.html" class="sidebar-item">
+
+                <span class="sidebar-icon">👤</span>
+
+                <span>
+                    Gym Profile
+                </span>
+
+            </a>
+
+
+            <a href="settings.html" class="sidebar-item">
+
+                <span class="sidebar-icon">⚙</span>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+            <a href="login.html" class="sidebar-item logout-item">
+
+                <span class="sidebar-icon">↪</span>
+
+                <span>
+                    Logout
+                </span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="top-header">
+
+        <div class="header-left">
+
+            <a href="more.html" class="back-btn">
+                ←
+            </a>
+
+            <div class="gym-logo">
+                F
+            </div>
+
+            <div class="gym-info">
+                <h1>FitZone</h1>
+                <p>Gym Management</p>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-container">
+
+        <section class="welcome-section">
+
+            <p class="welcome-small">
+                Alerts & Reminders
+            </p>
+
+            <h2>
+                Notifications
+            </h2>
+
+            <p class="welcome-text">
+                Keep track of important gym updates.
+            </p>
+
+        </section>
+
+
+        <!-- ================= NOTIFICATION SUMMARY ================= -->
+
+        <section class="notification-summary">
+
+            <div class="notification-summary-card">
+
+                <span>
+                    Unread
+                </span>
+
+                <strong>
+                    3
+                </strong>
+
+            </div>
+
+
+            <div class="notification-summary-card">
+
+                <span>
+                    Today
+                </span>
+
+                <strong>
+                    5
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TODAY ================= -->
+
+        <section class="notification-section">
+
+            <div class="notification-section-heading">
+                Today
+            </div>
+
+
+            <div class="notification-list">
+
+
+                <!-- Expiring -->
+
+                <article class="notification-card">
+
+                    <div class="notification-icon expiry">
+                        !
+                    </div>
+
+                    <div class="notification-content">
+
+                        <h3>
+                            Membership Expiring Soon
+                        </h3>
+
+                        <p>
+                            Rahul Sharma's membership expires in 2 days.
+                        </p>
+
+                        <span>
+                            10 minutes ago
+                        </span>
+
+                    </div>
+
+                    <div class="unread-dot"></div>
+
+                </article>
+
+
+                <!-- Payment -->
+
+                <article class="notification-card">
+
+                    <div class="notification-icon payment">
+                        ₹
+                    </div>
+
+                    <div class="notification-content">
+
+                        <h3>
+                            Payment Received
+                        </h3>
+
+                        <p>
+                            Priya Singh paid ₹2,500 for her membership.
+                        </p>
+
+                        <span>
+                            1 hour ago
+                        </span>
+
+                    </div>
+
+                    <div class="unread-dot"></div>
+
+                </article>
+
+
+                <!-- New Member -->
+
+                <article class="notification-card">
+
+                    <div class="notification-icon member">
+                        +
+                    </div>
+
+                    <div class="notification-content">
+
+                        <h3>
+                            New Member Added
+                        </h3>
+
+                        <p>
+                            Rakesh Kumar joined the gym.
+                        </p>
+
+                        <span>
+                            3 hours ago
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= YESTERDAY ================= -->
+
+        <section class="notification-section">
+
+            <div class="notification-section-heading">
+                Yesterday
+            </div>
+
+
+            <div class="notification-list">
+
+
+                <article class="notification-card">
+
+                    <div class="notification-icon expiry">
+                        !
+                    </div>
+
+                    <div class="notification-content">
+
+                        <h3>
+                            Membership Expired
+                        </h3>
+
+                        <p>
+                            Amit Kumar's membership has expired.
+                        </p>
+
+                        <span>
+                            Yesterday
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="notification-card">
+
+                    <div class="notification-icon payment">
+                        ₹
+                    </div>
+
+                    <div class="notification-content">
+
+                        <h3>
+                            Payment Received
+                        </h3>
+
+                        <p>
+                            Neha Sharma paid ₹1,000 for her membership.
+                        </p>
+
+                        <span>
+                            Yesterday
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EMPTY STATE NOTE ================= -->
+
+        <div class="notification-info">
+
+            <strong>
+                💡 Automatic reminders
+            </strong>
+
+            <p>
+                Membership expiry reminders will be generated automatically.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= BOTTOM NAVIGATION ================= -->
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="bottom-nav-item">
+
+            <span>🏠</span>
+            <small>Home</small>
+
+        </a>
+
+
+        <a href="members.html" class="bottom-nav-item">
+
+            <span>👥</span>
+            <small>Members</small>
+
+        </a>
+
+
+        <a href="add-member.html" class="bottom-nav-item add-button">
+
+            <span>＋</span>
+            <small>Add</small>
+
+        </a>
+
+
+        <a href="payments.html" class="bottom-nav-item">
+
+            <span>₹</span>
+            <small>Payments</small>
+
+        </a>
+
+
+        <a href="more.html" class="bottom-nav-item active">
+
+            <span>⋯</span>
+            <small>More</small>
+
+        </a>
+
+    </nav>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

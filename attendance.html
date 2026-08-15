@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance - FitZone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= DESKTOP SIDEBAR ================= -->
+
+    <aside class="desktop-sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+                F
+            </div>
+
+            <div>
+                <h2>FitZone</h2>
+                <p>Gym Management</p>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html" class="sidebar-item active">
+
+                <span class="sidebar-icon">🏠</span>
+
+                <span>
+                    Home
+                </span>
+
+            </a>
+
+
+            <a href="members.html" class="sidebar-item">
+
+                <span class="sidebar-icon">👥</span>
+
+                <span>
+                    Members
+                </span>
+
+            </a>
+
+
+            <a href="payments.html" class="sidebar-item">
+
+                <span class="sidebar-icon">₹</span>
+
+                <span>
+                    Payments
+                </span>
+
+            </a>
+
+
+            <a href="attendance.html" class="sidebar-item">
+
+                <span class="sidebar-icon">✓</span>
+
+                <span>
+                    Attendance
+                </span>
+
+            </a>
+
+
+            <a href="membership-plans.html" class="sidebar-item">
+
+                <span class="sidebar-icon">📑</span>
+
+                <span>
+                    Membership Plans
+                </span>
+
+            </a>
+
+
+            <a href="notifications.html" class="sidebar-item">
+
+                <span class="sidebar-icon">🔔</span>
+
+                <span>
+                    Notifications
+                </span>
+
+            </a>
+
+
+            <a href="more.html" class="sidebar-item">
+
+                <span class="sidebar-icon">⋯</span>
+
+                <span>
+                    More
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="gym-profile.html" class="sidebar-item">
+
+                <span class="sidebar-icon">👤</span>
+
+                <span>
+                    Gym Profile
+                </span>
+
+            </a>
+
+
+            <a href="settings.html" class="sidebar-item">
+
+                <span class="sidebar-icon">⚙</span>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+            <a href="login.html" class="sidebar-item logout-item">
+
+                <span class="sidebar-icon">↪</span>
+
+                <span>
+                    Logout
+                </span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="top-header">
+
+        <div class="header-left">
+
+            <button class="menu-btn" aria-label="Open menu">
+                ☰
+            </button>
+
+            <div class="gym-logo">
+                F
+            </div>
+
+            <div class="gym-info">
+                <h1>FitZone</h1>
+                <p>Gym Management</p>
+            </div>
+
+        </div>
+
+        <button class="notification-btn" aria-label="Notifications">
+            🔔
+        </button>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-container">
+
+        <section class="welcome-section">
+
+            <p class="welcome-small">
+                Daily Tracking
+            </p>
+
+            <h2>
+                Attendance
+            </h2>
+
+            <p class="welcome-text">
+                Keep track of today's gym attendance.
+            </p>
+
+        </section>
+
+
+        <!-- ================= TODAY SUMMARY ================= -->
+
+        <section class="attendance-summary">
+
+            <div class="attendance-main-card">
+
+                <div class="attendance-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <p>
+                        Today's Attendance
+                    </p>
+
+                    <h3>
+                        86
+                    </h3>
+
+                    <span>
+                        members present
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="attendance-small-card">
+
+                <span>
+                    Total Members
+                </span>
+
+                <strong>
+                    248
+                </strong>
+
+            </div>
+
+
+            <div class="attendance-small-card">
+
+                <span>
+                    Absent
+                </span>
+
+                <strong>
+                    162
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SEARCH ================= -->
+
+        <section class="attendance-tools">
+
+            <div class="attendance-search">
+
+                <span>
+                    🔍
+                </span>
+
+                <input type="search" placeholder="Search member..." aria-label="Search member">
+
+            </div>
+
+            <button class="mark-all-btn">
+                ✓ Mark All Present
+            </button>
+
+        </section>
+
+
+        <!-- ================= DATE ================= -->
+
+        <section class="attendance-date">
+
+            <button>
+                ←
+            </button>
+
+            <div>
+                <span>
+                    TODAY
+                </span>
+
+                <strong id="attendanceDate">
+                    12 August 2026
+                </strong>
+            </div>
+
+            <button>
+                →
+            </button>
+
+        </section>
+
+
+        <!-- ================= MEMBER LIST ================= -->
+
+        <section class="section-block">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>
+                        Members
+                    </h2>
+
+                    <p>
+                        Mark attendance for today's session
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="attendance-list">
+
+
+                <!-- Member 1 -->
+
+                <article class="attendance-member">
+
+                    <div class="attendance-avatar">
+                        RS
+                    </div>
+
+                    <div class="attendance-member-info">
+
+                        <h3>
+                            Rahul Sharma
+                        </h3>
+
+                        <p>
+                            Monthly Plan
+                        </p>
+
+                    </div>
+
+                    <button class="attendance-status present">
+                        ✓ Present
+                    </button>
+
+                </article>
+
+
+                <!-- Member 2 -->
+
+                <article class="attendance-member">
+
+                    <div class="attendance-avatar">
+                        AK
+                    </div>
+
+                    <div class="attendance-member-info">
+
+                        <h3>
+                            Amit Kumar
+                        </h3>
+
+                        <p>
+                            3 Month Plan
+                        </p>
+
+                    </div>
+
+                    <button class="attendance-status absent">
+                        Absent
+                    </button>
+
+                </article>
+
+
+                <!-- Member 3 -->
+
+                <article class="attendance-member">
+
+                    <div class="attendance-avatar">
+                        PS
+                    </div>
+
+                    <div class="attendance-member-info">
+
+                        <h3>
+                            Priya Singh
+                        </h3>
+
+                        <p>
+                            6 Month Plan
+                        </p>
+
+                    </div>
+
+                    <button class="attendance-status present">
+                        ✓ Present
+                    </button>
+
+                </article>
+
+
+                <!-- Member 4 -->
+
+                <article class="attendance-member">
+
+                    <div class="attendance-avatar">
+                        RK
+                    </div>
+
+                    <div class="attendance-member-info">
+
+                        <h3>
+                            Rakesh Kumar
+                        </h3>
+
+                        <p>
+                            Monthly Plan
+                        </p>
+
+                    </div>
+
+                    <button class="attendance-status absent">
+                        Absent
+                    </button>
+
+                </article>
+
+
+                <!-- Member 5 -->
+
+                <article class="attendance-member">
+
+                    <div class="attendance-avatar">
+                        NS
+                    </div>
+
+                    <div class="attendance-member-info">
+
+                        <h3>
+                            Neha Sharma
+                        </h3>
+
+                        <p>
+                            3 Month Plan
+                        </p>
+
+                    </div>
+
+                    <button class="attendance-status present">
+                        ✓ Present
+                    </button>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= BOTTOM NAV ================= -->
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="bottom-nav-item">
+            <span>🏠</span>
+            <small>Home</small>
+        </a>
+
+        <a href="members.html" class="bottom-nav-item">
+            <span>👥</span>
+            <small>Members</small>
+        </a>
+
+        <a href="add-member.html" class="bottom-nav-item add-button">
+            <span>＋</span>
+            <small>Add</small>
+        </a>
+
+        <a href="payments.html" class="bottom-nav-item">
+            <span>₹</span>
+            <small>Payments</small>
+        </a>
+
+        <a href="more.html" class="bottom-nav-item">
+            <span>⋯</span>
+            <small>More</small>
+        </a>
+
+    </nav>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

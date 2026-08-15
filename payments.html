@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payments - FitZone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= DESKTOP SIDEBAR ================= -->
+
+    <aside class="desktop-sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+                F
+            </div>
+
+            <div>
+                <h2>FitZone</h2>
+                <p>Gym Management</p>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html" class="sidebar-item active">
+
+                <span class="sidebar-icon">🏠</span>
+
+                <span>
+                    Home
+                </span>
+
+            </a>
+
+
+            <a href="members.html" class="sidebar-item">
+
+                <span class="sidebar-icon">👥</span>
+
+                <span>
+                    Members
+                </span>
+
+            </a>
+
+
+            <a href="payments.html" class="sidebar-item">
+
+                <span class="sidebar-icon">₹</span>
+
+                <span>
+                    Payments
+                </span>
+
+            </a>
+
+
+            <a href="attendance.html" class="sidebar-item">
+
+                <span class="sidebar-icon">✓</span>
+
+                <span>
+                    Attendance
+                </span>
+
+            </a>
+
+
+            <a href="membership-plans.html" class="sidebar-item">
+
+                <span class="sidebar-icon">📑</span>
+
+                <span>
+                    Membership Plans
+                </span>
+
+            </a>
+
+
+            <a href="notifications.html" class="sidebar-item">
+
+                <span class="sidebar-icon">🔔</span>
+
+                <span>
+                    Notifications
+                </span>
+
+            </a>
+
+
+            <a href="more.html" class="sidebar-item">
+
+                <span class="sidebar-icon">⋯</span>
+
+                <span>
+                    More
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="gym-profile.html" class="sidebar-item">
+
+                <span class="sidebar-icon">👤</span>
+
+                <span>
+                    Gym Profile
+                </span>
+
+            </a>
+
+
+            <a href="settings.html" class="sidebar-item">
+
+                <span class="sidebar-icon">⚙</span>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+            <a href="login.html" class="sidebar-item logout-item">
+
+                <span class="sidebar-icon">↪</span>
+
+                <span>
+                    Logout
+                </span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="top-header">
+
+        <div class="header-left">
+
+            <button class="menu-btn" aria-label="Open menu">
+                ☰
+            </button>
+
+            <div class="gym-logo">
+                F
+            </div>
+
+            <div class="gym-info">
+                <h1>FitZone</h1>
+                <p>Gym Management</p>
+            </div>
+
+        </div>
+
+        <button class="notification-btn" aria-label="Notifications">
+            🔔
+        </button>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-container">
+
+        <!-- Page Heading -->
+
+        <section class="welcome-section">
+
+            <p class="welcome-small">
+                Money Management
+            </p>
+
+            <h2>
+                Payments
+            </h2>
+
+            <p class="welcome-text">
+                Track your gym payments easily.
+            </p>
+
+        </section>
+
+
+        <!-- ================= PAYMENT SUMMARY ================= -->
+
+        <section class="payment-summary">
+
+            <div class="payment-summary-card">
+
+                <div class="payment-card-icon">
+                    ₹
+                </div>
+
+                <p>
+                    Today's Collection
+                </p>
+
+                <h3>
+                    ₹4,500
+                </h3>
+
+                <span>
+                    5 payments
+                </span>
+
+            </div>
+
+
+            <div class="payment-summary-card">
+
+                <div class="payment-card-icon">
+                    ₹
+                </div>
+
+                <p>
+                    This Month
+                </p>
+
+                <h3>
+                    ₹48,500
+                </h3>
+
+                <span>
+                    August 2026
+                </span>
+
+            </div>
+
+
+            <div class="payment-summary-card payment-due-card">
+
+                <div class="payment-card-icon">
+                    !
+                </div>
+
+                <p>
+                    Payment Due
+                </p>
+
+                <h3>
+                    ₹18,500
+                </h3>
+
+                <span>
+                    12 members
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SEARCH + ADD ================= -->
+
+        <section class="payment-tools">
+
+            <div class="payment-search">
+
+                <span>
+                    🔍
+                </span>
+
+                <input type="search" placeholder="Search member..." aria-label="Search payments">
+
+            </div>
+
+
+            <a href="add-payment.html" class="add-payment-btn">
+                <span>＋</span>
+                Add Payment
+            </a>
+
+        </section>
+
+
+        <!-- ================= FILTER ================= -->
+
+        <section class="payment-filter">
+
+            <button class="payment-filter-btn active">
+                All
+            </button>
+
+            <button class="payment-filter-btn">
+                Paid
+            </button>
+
+            <button class="payment-filter-btn">
+                Pending
+            </button>
+
+        </section>
+
+
+        <!-- ================= PAYMENT HISTORY ================= -->
+
+        <section class="section-block">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>
+                        Recent Payments
+                    </h2>
+
+                    <p>
+                        Latest payment activity
+                    </p>
+
+                </div>
+
+                <button class="view-all-btn" id="viewAllPaymentsBtn">
+                    View All
+                </button>
+
+            </div>
+
+
+            <div class="payment-list">
+
+
+                <!-- Payment 1 -->
+
+                <article class="payment-card">
+
+                    <div class="payment-member-avatar">
+                        RS
+                    </div>
+
+                    <div class="payment-member-info">
+
+                        <h3>
+                            Rahul Sharma
+                        </h3>
+
+                        <p>
+                            Monthly Plan
+                        </p>
+
+                        <small>
+                            12 Aug 2026
+                        </small>
+
+                    </div>
+
+                    <div class="payment-amount">
+
+                        <strong>
+                            ₹1,000
+                        </strong>
+
+                        <span class="payment-status paid">
+                            Paid
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Payment 2 -->
+
+                <article class="payment-card">
+
+                    <div class="payment-member-avatar">
+                        AK
+                    </div>
+
+                    <div class="payment-member-info">
+
+                        <h3>
+                            Amit Kumar
+                        </h3>
+
+                        <p>
+                            3 Month Plan
+                        </p>
+
+                        <small>
+                            11 Aug 2026
+                        </small>
+
+                    </div>
+
+                    <div class="payment-amount">
+
+                        <strong>
+                            ₹2,500
+                        </strong>
+
+                        <span class="payment-status paid">
+                            Paid
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Payment 3 -->
+
+                <article class="payment-card">
+
+                    <div class="payment-member-avatar">
+                        PS
+                    </div>
+
+                    <div class="payment-member-info">
+
+                        <h3>
+                            Priya Singh
+                        </h3>
+
+                        <p>
+                            6 Month Plan
+                        </p>
+
+                        <small>
+                            10 Aug 2026
+                        </small>
+
+                    </div>
+
+                    <div class="payment-amount">
+
+                        <strong>
+                            ₹4,500
+                        </strong>
+
+                        <span class="payment-status paid">
+                            Paid
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Payment 4 -->
+
+                <article class="payment-card">
+
+                    <div class="payment-member-avatar">
+                        RK
+                    </div>
+
+                    <div class="payment-member-info">
+
+                        <h3>
+                            Rakesh Kumar
+                        </h3>
+
+                        <p>
+                            Monthly Plan
+                        </p>
+
+                        <small>
+                            09 Aug 2026
+                        </small>
+
+                    </div>
+
+                    <div class="payment-amount">
+
+                        <strong>
+                            ₹1,000
+                        </strong>
+
+                        <span class="payment-status pending">
+                            Pending
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PAYMENT DUE ================= -->
+
+        <section class="section-block">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>
+                        Pending Payments
+                    </h2>
+
+                    <p>
+                        Members with unpaid amount
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="pending-payment-list">
+
+
+                <article class="pending-payment-card">
+
+                    <div class="payment-member-avatar">
+                        VK
+                    </div>
+
+                    <div class="payment-member-info">
+
+                        <h3>
+                            Vikash Kumar
+                        </h3>
+
+                        <p>
+                            Monthly Plan
+                        </p>
+
+                    </div>
+
+                    <div class="pending-amount">
+
+                        <strong>
+                            ₹1,000
+                        </strong>
+
+                        <button>
+                            Remind
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="pending-payment-card">
+
+                    <div class="payment-member-avatar">
+                        NS
+                    </div>
+
+                    <div class="payment-member-info">
+
+                        <h3>
+                            Neha Sharma
+                        </h3>
+
+                        <p>
+                            3 Month Plan
+                        </p>
+
+                    </div>
+
+                    <div class="pending-amount">
+
+                        <strong>
+                            ₹2,500
+                        </strong>
+
+                        <button>
+                            Remind
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= BOTTOM NAVIGATION ================= -->
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="bottom-nav-item">
+
+            <span>🏠</span>
+
+            <small>Home</small>
+
+        </a>
+
+
+        <a href="members.html" class="bottom-nav-item">
+
+            <span>👥</span>
+
+            <small>Members</small>
+
+        </a>
+
+
+        <a href="add-member.html" class="bottom-nav-item add-button">
+
+            <span>＋</span>
+
+            <small>Add</small>
+
+        </a>
+
+
+        <a href="payments.html" class="bottom-nav-item active">
+
+            <span>₹</span>
+
+            <small>Payments</small>
+
+        </a>
+
+
+        <a href="more.html" class="bottom-nav-item">
+
+            <span>⋯</span>
+
+            <small>More</small>
+
+        </a>
+
+    </nav>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Member - FitZone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ================= DESKTOP SIDEBAR ================= -->
+
+    <aside class="desktop-sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+                F
+            </div>
+
+            <div>
+                <h2>FitZone</h2>
+                <p>Gym Management</p>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html" class="sidebar-item active">
+
+                <span class="sidebar-icon">🏠</span>
+
+                <span>
+                    Home
+                </span>
+
+            </a>
+
+
+            <a href="members.html" class="sidebar-item">
+
+                <span class="sidebar-icon">👥</span>
+
+                <span>
+                    Members
+                </span>
+
+            </a>
+
+
+            <a href="payments.html" class="sidebar-item">
+
+                <span class="sidebar-icon">₹</span>
+
+                <span>
+                    Payments
+                </span>
+
+            </a>
+
+
+            <a href="attendance.html" class="sidebar-item">
+
+                <span class="sidebar-icon">✓</span>
+
+                <span>
+                    Attendance
+                </span>
+
+            </a>
+
+
+            <a href="membership-plans.html" class="sidebar-item">
+
+                <span class="sidebar-icon">📑</span>
+
+                <span>
+                    Membership Plans
+                </span>
+
+            </a>
+
+
+            <a href="notifications.html" class="sidebar-item">
+
+                <span class="sidebar-icon">🔔</span>
+
+                <span>
+                    Notifications
+                </span>
+
+            </a>
+
+
+            <a href="more.html" class="sidebar-item">
+
+                <span class="sidebar-icon">⋯</span>
+
+                <span>
+                    More
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="gym-profile.html" class="sidebar-item">
+
+                <span class="sidebar-icon">👤</span>
+
+                <span>
+                    Gym Profile
+                </span>
+
+            </a>
+
+
+            <a href="settings.html" class="sidebar-item">
+
+                <span class="sidebar-icon">⚙</span>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+            <a href="login.html" class="sidebar-item logout-item">
+
+                <span class="sidebar-icon">↪</span>
+
+                <span>
+                    Logout
+                </span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- Header -->
+
+    <header class="top-header">
+
+        <div class="header-left">
+
+            <a href="members.html" class="back-btn">
+                ←
+            </a>
+
+            <div class="gym-logo">
+                F
+            </div>
+
+            <div class="gym-info">
+                <h1>FitZone</h1>
+                <p>Gym Management</p>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <main class="main-container">
+
+        <!-- Page Heading -->
+
+        <section class="welcome-section">
+
+            <p class="welcome-small">
+                Member Management
+            </p>
+
+            <h2>
+                Add New Member
+            </h2>
+
+            <p class="welcome-text">
+                Enter the member's basic details below.
+            </p>
+
+        </section>
+
+
+        <!-- Member Form -->
+
+        <form class="member-form" id="memberForm">
+
+
+            <!-- Basic Information -->
+
+            <section class="form-section">
+
+                <div class="form-section-heading">
+
+                    <h3>
+                        Basic Information
+                    </h3>
+
+                    <p>
+                        Member's personal details
+                    </p>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="memberName">
+                        Full Name <span>*</span>
+                    </label>
+
+                    <input type="text" id="memberName" placeholder="Enter full name" required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="memberPhone">
+                        Mobile Number <span>*</span>
+                    </label>
+
+                    <input type="tel" id="memberPhone" placeholder="Enter mobile number" maxlength="10" required>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="memberAge">
+                            Age
+                        </label>
+
+                        <input type="number" id="memberAge" placeholder="Age" min="10" max="100">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="memberGender">
+                            Gender
+                        </label>
+
+                        <select id="memberGender">
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="Male">
+                                Male
+                            </option>
+
+                            <option value="Female">
+                                Female
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Membership -->
+
+            <section class="form-section">
+
+                <div class="form-section-heading">
+
+                    <h3>
+                        Membership
+                    </h3>
+
+                    <p>
+                        Choose the member's plan
+                    </p>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="membershipPlan">
+                        Membership Plan <span>*</span>
+                    </label>
+
+                    <select id="membershipPlan" required>
+
+                        <option value="">
+                            Select membership plan
+                        </option>
+
+                        <option value="Monthly">
+                            Monthly — ₹1,000
+                        </option>
+
+                        <option value="3 Months">
+                            3 Months — ₹2,500
+                        </option>
+
+                        <option value="6 Months">
+                            6 Months — ₹4,500
+                        </option>
+
+                        <option value="Yearly">
+                            Yearly — ₹8,000
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="startDate">
+                            Start Date
+                        </label>
+
+                        <input type="date" id="startDate">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="duration">
+                            Duration
+                        </label>
+
+                        <select id="duration">
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="1">
+                                1 Month
+                            </option>
+
+                            <option value="3">
+                                3 Months
+                            </option>
+
+                            <option value="6">
+                                6 Months
+                            </option>
+
+                            <option value="12">
+                                12 Months
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Payment -->
+
+            <section class="form-section">
+
+                <div class="form-section-heading">
+
+                    <h3>
+                        Payment
+                    </h3>
+
+                    <p>
+                        Record the membership payment
+                    </p>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="paymentAmount">
+                        Amount
+                    </label>
+
+                    <input type="number" id="paymentAmount" placeholder="Enter amount" min="0">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="paymentStatus">
+                        Payment Status
+                    </label>
+
+                    <select id="paymentStatus">
+
+                        <option value="Paid">
+                            Paid
+                        </option>
+
+                        <option value="Pending">
+                            Pending
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </section>
+
+
+            <!-- Submit -->
+
+            <button type="submit" class="save-member-btn">
+                Add Member
+            </button>
+
+
+        </form>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

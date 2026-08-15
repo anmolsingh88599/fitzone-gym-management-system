@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Members - FitZone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= DESKTOP SIDEBAR ================= -->
+
+    <aside class="desktop-sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+                F
+            </div>
+
+            <div>
+                <h2>FitZone</h2>
+                <p>Gym Management</p>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html" class="sidebar-item active">
+
+                <span class="sidebar-icon">🏠</span>
+
+                <span>
+                    Home
+                </span>
+
+            </a>
+
+
+            <a href="members.html" class="sidebar-item">
+
+                <span class="sidebar-icon">👥</span>
+
+                <span>
+                    Members
+                </span>
+
+            </a>
+
+
+            <a href="payments.html" class="sidebar-item">
+
+                <span class="sidebar-icon">₹</span>
+
+                <span>
+                    Payments
+                </span>
+
+            </a>
+
+
+            <a href="attendance.html" class="sidebar-item">
+
+                <span class="sidebar-icon">✓</span>
+
+                <span>
+                    Attendance
+                </span>
+
+            </a>
+
+
+            <a href="membership-plans.html" class="sidebar-item">
+
+                <span class="sidebar-icon">📑</span>
+
+                <span>
+                    Membership Plans
+                </span>
+
+            </a>
+
+
+            <a href="notifications.html" class="sidebar-item">
+
+                <span class="sidebar-icon">🔔</span>
+
+                <span>
+                    Notifications
+                </span>
+
+            </a>
+
+
+            <a href="more.html" class="sidebar-item">
+
+                <span class="sidebar-icon">⋯</span>
+
+                <span>
+                    More
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="gym-profile.html" class="sidebar-item">
+
+                <span class="sidebar-icon">👤</span>
+
+                <span>
+                    Gym Profile
+                </span>
+
+            </a>
+
+
+            <a href="settings.html" class="sidebar-item">
+
+                <span class="sidebar-icon">⚙</span>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+            <a href="login.html" class="sidebar-item logout-item">
+
+                <span class="sidebar-icon">↪</span>
+
+                <span>
+                    Logout
+                </span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- Header -->
+
+    <header class="top-header">
+
+        <div class="header-left">
+
+            <button class="menu-btn" aria-label="Open menu">
+                ☰
+            </button>
+
+            <div class="gym-logo">
+                F
+            </div>
+
+            <div class="gym-info">
+                <h1>FitZone</h1>
+                <p>Gym Management</p>
+            </div>
+
+        </div>
+
+        <button class="notification-btn" aria-label="Notifications">
+            🔔
+        </button>
+
+    </header>
+
+
+    <!-- Main Content -->
+
+    <main class="main-container">
+
+        <!-- Page Heading -->
+
+        <section class="welcome-section">
+
+            <p class="welcome-small">
+                Member Management
+            </p>
+
+            <h2>
+                Members
+            </h2>
+
+            <p class="welcome-text">
+                Manage all your gym members in one place.
+            </p>
+
+        </section>
+
+
+        <!-- Search + Add -->
+
+        <section class="member-tools">
+
+            <div class="search-box">
+
+                <span>🔍</span>
+
+                <input type="search" id="memberSearch" placeholder="Search member..." aria-label="Search members">
+
+            </div>
+
+
+            <a href="add-member.html" class="add-member-btn" id="addMemberBtn">
+
+                <span>＋</span>
+
+                Add Member
+
+            </a>
+
+        </section>
+
+
+        <!-- Member Summary -->
+
+        <section class="member-summary">
+
+            <div class="summary-item">
+
+                <span>All</span>
+
+                <strong id="allMembersCount">
+                    248
+                </strong>
+
+            </div>
+
+
+            <div class="summary-item">
+
+                <span>Active</span>
+
+                <strong id="activeMembersCount">
+                    214
+                </strong>
+
+            </div>
+
+
+            <div class="summary-item">
+
+                <span>Expired</span>
+
+                <strong id="expiredMembersCount">
+                    18
+                </strong>
+
+            </div>
+
+
+            <div class="summary-item">
+
+                <span>Due</span>
+
+                <strong id="dueMembersCount">
+                    12
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- Filter -->
+
+        <section class="member-filter">
+
+            <button class="filter-btn active">
+                All
+            </button>
+
+            <button class="filter-btn">
+                Active
+            </button>
+
+            <button class="filter-btn">
+                Expired
+            </button>
+
+            <button class="filter-btn">
+                Payment Due
+            </button>
+
+        </section>
+
+
+        <!-- Members List -->
+
+        <section class="members-list" id="membersList">
+
+
+            <!-- Member -->
+
+            <article class="full-member-card">
+
+                <div class="member-avatar">
+                    RS
+                </div>
+
+                <div class="full-member-info">
+
+                    <h3>
+                        Rahul Sharma
+                    </h3>
+
+                    <p>
+                        📱 98765 43210
+                    </p>
+
+                    <p>
+                        Monthly Plan • Expires 25 Aug
+                    </p>
+
+                </div>
+
+                <span class="status active">
+                    Active
+                </span>
+
+            </article>
+
+
+            <!-- Member -->
+
+            <article class="full-member-card">
+
+                <div class="member-avatar">
+                    AK
+                </div>
+
+                <div class="full-member-info">
+
+                    <h3>
+                        Amit Kumar
+                    </h3>
+
+                    <p>
+                        📱 98765 12345
+                    </p>
+
+                    <p>
+                        3 Month Plan • Expires 30 Aug
+                    </p>
+
+                </div>
+
+                <span class="status active">
+                    Active
+                </span>
+
+            </article>
+
+
+            <!-- Member -->
+
+            <article class="full-member-card">
+
+                <div class="member-avatar">
+                    PS
+                </div>
+
+                <div class="full-member-info">
+
+                    <h3>
+                        Priya Singh
+                    </h3>
+
+                    <p>
+                        📱 98765 67890
+                    </p>
+
+                    <p>
+                        6 Month Plan • Expires 18 Sep
+                    </p>
+
+                </div>
+
+                <span class="status active">
+                    Active
+                </span>
+
+            </article>
+
+
+            <!-- Member -->
+
+            <article class="full-member-card">
+
+                <div class="member-avatar">
+                    RK
+                </div>
+
+                <div class="full-member-info">
+
+                    <h3>
+                        Rakesh Kumar
+                    </h3>
+
+                    <p>
+                        📱 98765 11111
+                    </p>
+
+                    <p>
+                        Monthly Plan • Expires 14 Aug
+                    </p>
+
+                </div>
+
+                <span class="status active">
+                    Active
+                </span>
+
+            </article>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- Bottom Navigation -->
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="bottom-nav-item">
+
+            <span>🏠</span>
+
+            <small>Home</small>
+
+        </a>
+
+
+        <a href="members.html" class="bottom-nav-item active">
+
+            <span>👥</span>
+
+            <small>Members</small>
+
+        </a>
+
+
+        <a href="add-member.html" class="bottom-nav-item add-button">
+
+            <span>＋</span>
+
+            <small>Add</small>
+
+        </a>
+
+
+        <a href="payments.html" class="bottom-nav-item">
+
+            <span>₹</span>
+
+            <small>Payments</small>
+
+        </a>
+
+
+        <a href="more.html" class="bottom-nav-item">
+
+            <span>⋯</span>
+
+            <small>More</small>
+
+        </a>
+
+    </nav>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

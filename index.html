@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FitZone - Gym Management</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ================= DESKTOP SIDEBAR ================= -->
+    <aside class="desktop-sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+                F
+            </div>
+
+            <div>
+                <h2>FitZone</h2>
+                <p>Gym Management</p>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html" class="sidebar-item active">
+
+                <span class="sidebar-icon">🏠</span>
+
+                <span>
+                    Home
+                </span>
+
+            </a>
+
+
+            <a href="members.html" class="sidebar-item">
+
+                <span class="sidebar-icon">👥</span>
+
+                <span>
+                    Members
+                </span>
+
+            </a>
+
+
+            <a href="payments.html" class="sidebar-item">
+
+                <span class="sidebar-icon">₹</span>
+
+                <span>
+                    Payments
+                </span>
+
+            </a>
+
+
+            <a href="attendance.html" class="sidebar-item">
+
+                <span class="sidebar-icon">✓</span>
+
+                <span>
+                    Attendance
+                </span>
+
+            </a>
+
+
+            <a href="membership-plans.html" class="sidebar-item">
+
+                <span class="sidebar-icon">📑</span>
+
+                <span>
+                    Membership Plans
+                </span>
+
+            </a>
+
+
+            <a href="notifications.html" class="sidebar-item">
+
+                <span class="sidebar-icon">🔔</span>
+
+                <span>
+                    Notifications
+                </span>
+
+            </a>
+
+
+            <a href="more.html" class="sidebar-item">
+
+                <span class="sidebar-icon">⋯</span>
+
+                <span>
+                    More
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="gym-profile.html" class="sidebar-item">
+
+                <span class="sidebar-icon">👤</span>
+
+                <span>
+                    Gym Profile
+                </span>
+
+            </a>
+
+
+            <a href="settings.html" class="sidebar-item">
+
+                <span class="sidebar-icon">⚙</span>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+            <a href="login.html" class="sidebar-item logout-item">
+
+                <span class="sidebar-icon">↪</span>
+
+                <span>
+                    Logout
+                </span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="top-header">
+
+        <div class="header-left">
+
+            <button class="menu-btn" aria-label="Open menu">
+                ☰
+            </button>
+
+            <div class="gym-logo">
+                F
+            </div>
+
+            <div class="gym-info">
+                <h1>FitZone</h1>
+                <p>Gym Management</p>
+            </div>
+
+        </div>
+
+        <button class="notification-btn" aria-label="Notifications">
+            🔔
+        </button>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-container">
+
+
+        <!-- Welcome Section -->
+
+        <section class="welcome-section">
+
+            <p class="welcome-small">
+                Good Evening 👋
+            </p>
+
+            <h2>
+                Welcome back, Admin
+            </h2>
+
+            <p class="welcome-text">
+                Here's what's happening in your gym today.
+            </p>
+
+        </section>
+
+
+        <!-- ================= QUICK STATS ================= -->
+
+        <section class="stats-section">
+
+            <div class="stat-card">
+
+                <div class="stat-icon members-icon">
+                    👥
+                </div>
+
+                <div class="stat-content">
+
+                    <p>Total Members</p>
+
+                    <h3 id="totalMembers">
+                        248
+                    </h3>
+
+                    <span class="stat-positive">
+                        +12 this month
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon active-icon">
+                    ✓
+                </div>
+
+                <div class="stat-content">
+
+                    <p>Active Members</p>
+
+                    <h3 id="activeMembers">
+                        214
+                    </h3>
+
+                    <span class="stat-positive" id="activePercentage">
+                        100% active
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon expired-icon">
+                    !
+                </div>
+
+                <div class="stat-content">
+
+                    <p>Expired</p>
+
+                    <h3 id="expiredMembers">
+                        18
+                    </h3>
+
+                    <span class="stat-warning">
+                        Needs attention
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon payment-icon">
+                    ₹
+                </div>
+
+                <div class="stat-content">
+
+                    <p>Payment Due</p>
+
+                    <h3 id="paymentDue">
+                        ₹18,500
+                    </h3>
+
+                    <span class="stat-warning">
+                        12 members
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EXPIRING MEMBERS ================= -->
+
+        <section class="section-block">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>
+                        Membership Expiring Soon
+                    </h2>
+
+                    <p>
+                        Members who need attention
+                    </p>
+                </div>
+
+                <a href="members.html" class="view-all-btn">
+                    View All
+                </a>
+
+            </div>
+
+
+            <div class="expiry-list">
+            </div>
+
+        </section>
+
+
+        <!-- ================= RECENT MEMBERS ================= -->
+
+        <section class="section-block">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>
+                        Recent Members
+                    </h2>
+
+                    <p>
+                        Recently joined
+                    </p>
+                </div>
+
+                <a href="members.html" class="view-all-btn">
+                    View All
+                </a>
+
+            </div>
+
+
+            <div class="recent-members">
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= QUICK ACTIONS ================= -->
+
+        <section class="section-block">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>
+                        Quick Actions
+                    </h2>
+
+                    <p>
+                        Manage your gym quickly
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="quick-actions">
+
+                <a href="add-member.html" class="action-btn">
+                    <span>＋</span>
+                    Add Member
+                </a>
+
+                <a href="payments.html" class="action-btn">
+                    <span>₹</span>
+                    Add Payment
+                </a>
+
+                <a href="attendance.html" class="action-btn">
+                    <span>✓</span>
+                    Attendance
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= BOTTOM NAVIGATION ================= -->
+
+    <nav class="bottom-nav">
+
+        <a href="#" class="bottom-nav-item active">
+
+            <span>
+                🏠
+            </span>
+
+            <small>
+                Home
+            </small>
+
+        </a>
+
+
+        <a href="members.html" class="bottom-nav-item">
+
+            <span>
+                👥
+            </span>
+
+            <small>
+                Members
+            </small>
+
+        </a>
+
+
+        <a href="add-member.html" class="bottom-nav-item add-button">
+
+            <span>
+                ＋
+            </span>
+
+            <small>
+                Add
+            </small>
+
+        </a>
+
+
+        <a href="payments.html" class="bottom-nav-item">
+            <span>₹</span>
+            <small>Payments</small>
+        </a>
+
+
+        <a href="more.html" class="bottom-nav-item">
+            <span>⋯</span>
+            <small>More</small>
+        </a>
+
+    </nav>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

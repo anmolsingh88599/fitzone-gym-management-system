@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>App Settings - FitZone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ================= DESKTOP SIDEBAR ================= -->
+
+    <aside class="desktop-sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+                F
+            </div>
+
+            <div>
+                <h2>FitZone</h2>
+                <p>Gym Management</p>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html" class="sidebar-item active">
+
+                <span class="sidebar-icon">🏠</span>
+
+                <span>
+                    Home
+                </span>
+
+            </a>
+
+
+            <a href="members.html" class="sidebar-item">
+
+                <span class="sidebar-icon">👥</span>
+
+                <span>
+                    Members
+                </span>
+
+            </a>
+
+
+            <a href="payments.html" class="sidebar-item">
+
+                <span class="sidebar-icon">₹</span>
+
+                <span>
+                    Payments
+                </span>
+
+            </a>
+
+
+            <a href="attendance.html" class="sidebar-item">
+
+                <span class="sidebar-icon">✓</span>
+
+                <span>
+                    Attendance
+                </span>
+
+            </a>
+
+
+            <a href="membership-plans.html" class="sidebar-item">
+
+                <span class="sidebar-icon">📑</span>
+
+                <span>
+                    Membership Plans
+                </span>
+
+            </a>
+
+
+            <a href="notifications.html" class="sidebar-item">
+
+                <span class="sidebar-icon">🔔</span>
+
+                <span>
+                    Notifications
+                </span>
+
+            </a>
+
+
+            <a href="more.html" class="sidebar-item">
+
+                <span class="sidebar-icon">⋯</span>
+
+                <span>
+                    More
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="gym-profile.html" class="sidebar-item">
+
+                <span class="sidebar-icon">👤</span>
+
+                <span>
+                    Gym Profile
+                </span>
+
+            </a>
+
+
+            <a href="settings.html" class="sidebar-item">
+
+                <span class="sidebar-icon">⚙</span>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+            <a href="login.html" class="sidebar-item logout-item">
+
+                <span class="sidebar-icon">↪</span>
+
+                <span>
+                    Logout
+                </span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="top-header">
+
+        <div class="header-left">
+
+            <a href="more.html" class="back-btn">
+                ←
+            </a>
+
+            <div class="gym-logo">
+                F
+            </div>
+
+            <div class="gym-info">
+                <h1>FitZone</h1>
+                <p>Gym Management</p>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-container">
+
+        <section class="welcome-section">
+
+            <p class="welcome-small">
+                Preferences
+            </p>
+
+            <h2>
+                App Settings
+            </h2>
+
+            <p class="welcome-text">
+                Manage your app preferences.
+            </p>
+
+        </section>
+
+
+        <!-- ================= NOTIFICATION SETTINGS ================= -->
+
+        <section class="settings-section">
+
+            <div class="settings-section-heading">
+
+                <h3>
+                    Notifications
+                </h3>
+
+                <p>
+                    Control your gym reminders
+                </p>
+
+            </div>
+
+
+            <div class="settings-card">
+
+
+                <div class="setting-item">
+
+                    <div class="setting-icon">
+                        🔔
+                    </div>
+
+                    <div class="setting-info">
+
+                        <h4>
+                            Notifications
+                        </h4>
+
+                        <p>
+                            Receive important gym alerts
+                        </p>
+
+                    </div>
+
+                    <label class="toggle">
+
+                        <input type="checkbox" checked>
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="setting-item">
+
+                    <div class="setting-icon">
+                        !
+                    </div>
+
+                    <div class="setting-info">
+
+                        <h4>
+                            Expiry Reminders
+                        </h4>
+
+                        <p>
+                            Get reminders before membership expires
+                        </p>
+
+                    </div>
+
+                    <label class="toggle">
+
+                        <input type="checkbox" checked>
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= APP PREFERENCES ================= -->
+
+        <section class="settings-section">
+
+            <div class="settings-section-heading">
+
+                <h3>
+                    App Preferences
+                </h3>
+
+                <p>
+                    Customize your experience
+                </p>
+
+            </div>
+
+
+            <div class="settings-card">
+
+
+                <div class="setting-item">
+
+                    <div class="setting-icon">
+                        📅
+                    </div>
+
+                    <div class="setting-info">
+
+                        <h4>
+                            Start of Week
+                        </h4>
+
+                        <p>
+                            Choose your weekly starting day
+                        </p>
+
+                    </div>
+
+                    <select class="setting-select">
+
+                        <option>
+                            Monday
+                        </option>
+
+                        <option>
+                            Sunday
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="setting-item">
+
+                    <div class="setting-icon">
+                        ₹
+                    </div>
+
+                    <div class="setting-info">
+
+                        <h4>
+                            Currency
+                        </h4>
+
+                        <p>
+                            Currency used for payments
+                        </p>
+
+                    </div>
+
+                    <span class="setting-value">
+                        INR ₹
+                    </span>
+
+                </div>
+
+                <div class="setting-item">
+
+                    <div class="setting-icon">
+                        🌙
+                    </div>
+
+                    <div class="setting-info">
+
+                        <h4>
+                            Dark Mode
+                        </h4>
+
+                        <p>
+                            Switch between light and dark theme
+                        </p>
+
+                    </div>
+
+                    <label class="toggle">
+
+                        <input type="checkbox" id="darkModeBtn">
+
+                        <span class="toggle-slider"></span>
+
+                    </label>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DATA ================= -->
+
+        <section class="settings-section">
+
+            <div class="settings-section-heading">
+
+                <h3>
+                    Data
+                </h3>
+
+                <p>
+                    Manage your gym information
+                </p>
+
+            </div>
+
+
+            <div class="settings-card">
+
+
+                <button class="setting-action">
+
+                    <div class="setting-icon">
+                        📥
+                    </div>
+
+                    <div class="setting-info">
+
+                        <h4>
+                            Export Data
+                        </h4>
+
+                        <p>
+                            Download your gym records
+                        </p>
+
+                    </div>
+
+                    <span class="setting-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <button class="setting-action danger">
+
+                    <div class="setting-icon">
+                        🗑
+                    </div>
+
+                    <div class="setting-info">
+
+                        <h4>
+                            Clear Data
+                        </h4>
+
+                        <p>
+                            Remove all saved gym data
+                        </p>
+
+                    </div>
+
+                    <span class="setting-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= APP INFO ================= -->
+
+        <div class="app-info-card">
+
+            <strong>
+                FitZone
+            </strong>
+
+            <p>
+                Gym Management System
+            </p>
+
+            <span>
+                Version 1.0
+            </span>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= BOTTOM NAVIGATION ================= -->
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="bottom-nav-item">
+            <span>🏠</span>
+            <small>Home</small>
+        </a>
+
+        <a href="members.html" class="bottom-nav-item">
+            <span>👥</span>
+            <small>Members</small>
+        </a>
+
+        <a href="add-member.html" class="bottom-nav-item add-button">
+            <span>＋</span>
+            <small>Add</small>
+        </a>
+
+        <a href="payments.html" class="bottom-nav-item">
+            <span>₹</span>
+            <small>Payments</small>
+        </a>
+
+        <a href="more.html" class="bottom-nav-item active">
+            <span>⋯</span>
+            <small>More</small>
+        </a>
+
+    </nav>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

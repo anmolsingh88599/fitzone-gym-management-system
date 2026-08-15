@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Payment - FitZone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= DESKTOP SIDEBAR ================= -->
+
+    <aside class="desktop-sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+                F
+            </div>
+
+            <div>
+                <h2>FitZone</h2>
+                <p>Gym Management</p>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="index.html" class="sidebar-item active">
+
+                <span class="sidebar-icon">🏠</span>
+
+                <span>
+                    Home
+                </span>
+
+            </a>
+
+
+            <a href="members.html" class="sidebar-item">
+
+                <span class="sidebar-icon">👥</span>
+
+                <span>
+                    Members
+                </span>
+
+            </a>
+
+
+            <a href="payments.html" class="sidebar-item">
+
+                <span class="sidebar-icon">₹</span>
+
+                <span>
+                    Payments
+                </span>
+
+            </a>
+
+
+            <a href="attendance.html" class="sidebar-item">
+
+                <span class="sidebar-icon">✓</span>
+
+                <span>
+                    Attendance
+                </span>
+
+            </a>
+
+
+            <a href="membership-plans.html" class="sidebar-item">
+
+                <span class="sidebar-icon">📑</span>
+
+                <span>
+                    Membership Plans
+                </span>
+
+            </a>
+
+
+            <a href="notifications.html" class="sidebar-item">
+
+                <span class="sidebar-icon">🔔</span>
+
+                <span>
+                    Notifications
+                </span>
+
+            </a>
+
+
+            <a href="more.html" class="sidebar-item">
+
+                <span class="sidebar-icon">⋯</span>
+
+                <span>
+                    More
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="gym-profile.html" class="sidebar-item">
+
+                <span class="sidebar-icon">👤</span>
+
+                <span>
+                    Gym Profile
+                </span>
+
+            </a>
+
+
+            <a href="settings.html" class="sidebar-item">
+
+                <span class="sidebar-icon">⚙</span>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+            <a href="login.html" class="sidebar-item logout-item">
+
+                <span class="sidebar-icon">↪</span>
+
+                <span>
+                    Logout
+                </span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="top-header">
+
+        <div class="header-left">
+
+            <a href="payments.html" class="back-btn">
+                ←
+            </a>
+
+            <div class="gym-logo">
+                F
+            </div>
+
+            <div class="gym-info">
+                <h1>FitZone</h1>
+                <p>Gym Management</p>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-container">
+
+        <section class="welcome-section">
+
+            <p class="welcome-small">
+                Money Management
+            </p>
+
+            <h2>
+                Add Payment
+            </h2>
+
+            <p class="welcome-text">
+                Record a member's payment.
+            </p>
+
+        </section>
+
+
+        <!-- ================= PAYMENT FORM ================= -->
+
+        <form class="payment-form" id="paymentForm">
+
+
+            <!-- Member -->
+
+            <section class="form-section">
+
+                <div class="form-section-heading">
+
+                    <h3>
+                        Member Details
+                    </h3>
+
+                    <p>
+                        Select the member making the payment
+                    </p>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="paymentMember">
+                        Member <span>*</span>
+                    </label>
+
+                    <select id="paymentMember" required>
+
+                        <option value="">
+                            Select member
+                        </option>
+                    </select>
+
+                </div>
+
+            </section>
+
+
+            <!-- Payment Details -->
+
+            <section class="form-section">
+
+                <div class="form-section-heading">
+
+                    <h3>
+                        Payment Details
+                    </h3>
+
+                    <p>
+                        Enter payment information
+                    </p>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="paymentAmount">
+                        Amount <span>*</span>
+                    </label>
+
+                    <div class="amount-input">
+
+                        <span>₹</span>
+
+                        <input type="number" id="paymentAmount" placeholder="Enter amount" min="0" required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="paymentDate">
+                            Payment Date
+                        </label>
+
+                        <input type="date" id="paymentDate">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="paymentMethod">
+                            Payment Method
+                        </label>
+
+                        <select id="paymentMethod">
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="Cash">
+                                Cash
+                            </option>
+
+                            <option value="UPI">
+                                UPI
+                            </option>
+
+                            <option value="Bank Transfer">
+                                Bank Transfer
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="paymentPlan">
+                        Membership Plan
+                    </label>
+
+                    <select id="paymentPlan">
+
+                        <option value="">
+                            Select plan
+                        </option>
+
+                        <option value="Monthly">
+                            Monthly
+                        </option>
+
+                        <option value="3 Months">
+                            3 Months
+                        </option>
+
+                        <option value="6 Months">
+                            6 Months
+                        </option>
+
+                        <option value="Yearly">
+                            Yearly
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="paymentStatus">
+                        Payment Status
+                    </label>
+
+                    <select id="paymentStatus">
+
+                        <option value="Paid">
+                            Paid
+                        </option>
+
+                        <option value="Pending">
+                            Pending
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </section>
+
+
+            <!-- Note -->
+
+            <section class="form-section">
+
+                <div class="form-section-heading">
+
+                    <h3>
+                        Note
+                    </h3>
+
+                    <p>
+                        Add an optional note
+                    </p>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="paymentNote">
+                        Payment Note
+                    </label>
+
+                    <textarea id="paymentNote" placeholder="Example: Paid through UPI" rows="4"></textarea>
+
+                </div>
+
+            </section>
+
+
+            <!-- Save -->
+
+            <button type="submit" class="save-payment-btn">
+                Save Payment
+            </button>
+
+
+        </form>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
